@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <!-- <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@700&display=swap" rel="stylesheet"> -->
+  <link rel="stylesheet" href="css/master.css">
+  <title id="titulo">Cuaderno 2.0 | Contenido</title>
+  <style>
+
+  </style>
+</head>
+<body>
+
+    <nav class="menu">
+      <ul>
+        <li><a class="nav" onclick="nav_active(1)">Registro</a></li>
+        <li><a class="nav" onclick="nav_active(2)">Cuaderno</a></li>
+        <li><a href="index.html">Salir</a></li>
+      </ul>
+    </nav>
+
+  <div class="modal">
+    <div class="container-contenido container">
+      <div class="container-title">
+        <h4 class="c2_fecha">Fecha</h4>
+        <input class="c2_fecha" type="date" name="date" value="2020-07-04">
+      </div>
+
+      <div class="container-content">
+        <table>
+          <tr>
+            <th>Producto</th>
+            <th>Saldo incial</th>
+            <th>Ingreso</th>
+            <th>Egreso</th>
+            <th>Saldo final</th>
+          </tr>
+          <tr>
+            <th>Frozen yogurt</th>
+            <td>10</td>
+            <td>5</td>
+            <td>3</td>
+            <td>12</td>
+          </tr>
+          <tr>
+            <th>Agua con gas</th>
+            <td>20</td>
+            <td>10</td>
+            <td>5</td>
+            <td>25</td>
+          </tr>
+          <tr>
+            <th>Agua sin gas</th>
+            <td>9</td>
+            <td>5</td>
+            <td>14</td>
+            <td>0</td>
+          </tr>
+          <tr>
+            <th>Free tea</th>
+            <td>0</td>
+            <td>20</td>
+            <td>10</td>
+            <td>10</td>
+          </tr>
+          <tr>
+            <th>Hamburguesas</th>
+            <td>10</td>
+            <td>10</td>
+            <td>0</td>
+            <td>20</td>
+          </tr>
+          <tr>
+            <th>Fondue</th>
+            <td>10</td>
+            <td>0</td>
+            <td>10</td>
+            <td>0</td>
+          </tr>
+        </table>
+      </div>
+
+      <footer class="pie">
+        <a class="button" onclick="registrar()">Registrar</a>
+        <a class="button" href="index.html">Salir</a>
+      </footer>
+
+    </div>
+
+
+    <div class="container-registro container">
+      <div class="container-title">
+        <ul>
+          <li class="c3_toperation"><a>Ingreso</a></li>
+          <span class="c3_toperation">|</span>
+          <li class="c3_toperation"><a>Egreso</a> </li><br>
+        </ul>
+      </div>
+      <div class="content-registro container-content">
+        <form class="registro" action="index.html" method="post">
+          <label for="pfrozenyogurt">Frozen Yogurt</label>
+          <input type="number" name="pfrozenyogurt"><br>
+          <label for="pacongas">Agua con gas</label>
+          <input type="number" name="pacongas"><br>
+          <label for="pasingas">Agua sin gas</label>
+          <input type="number" name="pasingas"><br>
+          <label for="pfreetea">Free tea</label>
+          <input type="number" name="pfreetea"><br>
+          <label for="phamb">Hamburguesas</label>
+          <input type="number" name="phamb"><br>
+          <label for="pfondue">Fondue</label>
+          <input type="number" name="pfondue"><br>
+        </form>
+      </div>
+
+      <footer class="pie">
+        <a class="button">Guardar</a>
+        <a class="button" onclick="cuaderno()">Cancelar</a>
+      </footer>
+    </div>
+
+  </div>
+</div>
+
+<script type="text/javascript">
+
+  function cuaderno() {
+    var clase;
+    var clase_ocultar;
+    clase = document.getElementsByClassName("container-registro");
+    clase_ocultar = document.getElementsByClassName("container-contenido");
+    clase[0].style.display = "none";
+    clase_ocultar[0].style.display = "block";
+  }
+
+  function registrar() {
+    var clase;
+    var clase_ocultar;
+    clase = document.getElementsByClassName("container-registro");
+    clase_ocultar = document.getElementsByClassName("container-contenido");
+    clase_ocultar[0].style.display = "none";
+    clase[0].style.display = "block";
+  }
+
+  function nav_active(n) {
+    var i;
+    var nav = document.getElementsByClassName("nav");
+    for (i = 0; i < nav.length; i++) {
+      nav[i].className = nav[i].className.replace(" active", "");
+    }
+    if (n == 1) {
+      document.getElementsByTagName("TITLE")[0].text = "Cuaderno 2.0 | Registro";
+      registrar();
+    }
+    else {
+      document.getElementsByTagName("TITLE")[0].text = "Cuaderno 2.0 | Contenido";
+      cuaderno();
+    }
+    nav[n-1].className += " active";
+
+
+  }
+</script>
+
+</body>
+</html>

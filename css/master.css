@@ -1,0 +1,314 @@
+:root {
+  --color1: #eeeeee;
+  --color2: #393e46;
+  --color3: #76ead7;
+  --color4: #c4fb6d;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Helvetica', sans-serif;
+
+}
+
+.modal {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: var(--color2);
+}
+
+.container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 70%;
+  padding: 2%;
+  background-color: var(--color1);
+  border-radius: 5px;
+
+  /*
+  margin: auto;
+  margin-top: 90px;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+  */
+}
+
+.button {
+  padding: 12px;
+  margin: auto;
+  background-color: var(--color2);
+  color: var(--color1);
+  border: none;
+  border-radius: 3px;
+  font-size: 15px;
+  border-left: 4px solid var(--color4);
+  text-decoration: none;
+  display: inline-block;
+  width: 140px;
+  text-align: center;
+}
+
+.button:hover {
+  background-color: var(--color4);
+  color: black;
+}
+
+/* Home Page */
+.container-home {
+  width: 500px;
+  background-color: var(--color3);
+}
+.container-home .button {
+  display: block;
+}
+
+.container-home h1 {
+  text-align: center;
+  font-size: 3em;
+  color: var(--color2);
+}
+
+input[type=password] {
+  width: 50%;
+  padding: 15px 30px;
+  margin: auto;
+  display: block;
+  border: none;
+  border-bottom: 1px solid var(--color4);
+  box-sizing: border-box;
+  border-radius: 6px;
+  background-color: var(--color1);
+  text-align: center;
+}
+
+
+
+/* Content section */
+/*
+.container-contenido {
+  width: 80%;
+  padding: 3%;
+  margin: auto;
+  background-color: var(--color1);
+}
+*/
+
+@media screen and (max-width: 900px) {
+  .container {
+    width: 95%;
+    padding: 3%;
+  }
+
+  .container-home {
+    width: 400px;
+  }
+
+  table th, table td {
+    font-size: 13px;
+  }
+
+  table td {
+    text-align: center;
+  }
+
+  .pie a {
+    font-size: 14px;
+  }
+}
+
+/* navegación */
+nav {
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: var(--color3);
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: var(--color2);
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+nav li:hover {
+  background-color: var(--color1);
+}
+
+.active {
+  background-color: var(--color2);
+  color: var(--color1);
+}
+/* fin de nav */
+
+/* Encabezado fecha */
+.container-title, .container-content {
+  overflow: auto;
+  width: 90%;
+  padding: inherit;
+  margin: auto;
+  display: block;
+
+}
+
+.container-content {
+  height: 300px;
+  padding: 0;
+}
+
+
+.c2_fecha, .c3_toperation {
+  display: inline-block;
+  padding: 0 20px;
+  font-size: 17px;
+  font-style: normal;
+  font-weight: normal;
+
+}
+
+.container-title input {
+  float: right;
+  font-size: 14px;
+}
+
+.pie {
+  margin: auto;
+  width: 90%;
+  padding: inherit;
+  text-align: center;
+
+}
+
+}
+
+/*
+.content-date h4 {
+  border: 1px solid black;
+  display: inline-block;
+  padding: 5px 40px;
+  width: auto;
+}
+*/
+/* fin encabezado */
+
+/*
+.pie a {
+  display: inline-block;
+  padding: 8px 12px;
+  margin: 20px 20px 5px;
+  width: 30%;
+  font-size: 14px;
+
+}
+*/
+
+th, tr {
+  margin: 0;
+  padding: 0;
+
+}
+
+th, td {
+  border: 1px solid var(--color2);
+  font-size: 15px;
+}
+
+td {
+  text-align: center;
+}
+
+table {
+  border-collapse: collapse;
+  width: 100%;
+  height: 99%;
+  margin: auto;
+  padding: auto;
+
+}
+
+
+
+
+/* Form section */
+/*
+.container-registro {
+  display: none;
+  width: 70%;
+  padding: 30px 0;
+}
+*/
+/*
+.container-registro {
+  display: none;
+}
+*/
+/*
+.type-operation {
+  margin: 10px auto;
+  width: 50%;
+
+}
+
+.type-operation ul {
+  list-style-type: none;
+}
+
+.type-operation li {
+  float: left;
+}
+
+.type-operation li a {
+  display: inline-block;
+  padding: 0px 20px;
+  cursor: pointer;
+
+}
+*/
+form {
+  width: 70%;
+  margin: auto;
+  height: 100%;
+  text-align: center;
+}
+
+form label {
+  display: inline-block;
+  width: 150px;
+  margin: 0 10px;
+  text-align: left;
+  font-size: 15px;
+}
+
+form input {
+  width: 70px;
+}
+
+form label, form input {
+  margin: 10px 0;
+  padding: 5px 0;
+}
