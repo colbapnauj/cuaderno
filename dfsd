@@ -1,0 +1,48 @@
+[33mcommit ff6c24bedee9090e228a598a2c02044796793457[m[33m ([m[1;36mHEAD -> [m[1;32mmaster[m[33m)[m
+Author: Jean Chiclla <j-c_f@outlook.com>
+Date:   Sun Jul 5 19:23:46 2020 -0500
+
+    tercer commit
+
+[33mcommit f95e70847de0bf1c025972583ea0bb917c223991[m
+Merge: cbb4a9a 4c0afba
+Author: Jean Chiclla <j-c_f@outlook.com>
+Date:   Sun Jul 5 19:20:32 2020 -0500
+
+    Merge branch 'login' of https://github.com/colbapnauj/cuaderno2
+
+[33mcommit 4c0afbad390c5da642ddda862a0513259fb4f9c3[m[33m ([m[1;31moriginal/login[m[33m)[m
+Author: Jean Chiclla <j-c_f@outlook.com>
+Date:   Sun Jul 5 18:23:04 2020 -0500
+
+    segundo commit en login
+
+[33mcommit cbb4a9a9abadb4a160d3424c7bb1c5796067a354[m[33m ([m[1;32mestilo2[m[33m)[m
+Author: Jean Chiclla <j-c_f@outlook.com>
+Date:   Sun Jul 5 18:14:40 2020 -0500
+
+    made a change
+
+[33mcommit cccd748fdea870784f4afaf8db64a888387aeee1[m
+Author: Jean Chiclla <j-c_f@outlook.com>
+Date:   Sun Jul 5 16:12:38 2020 -0500
+
+    version alternativa que contiene un login
+
+[33mcommit edf95bf71e0e2fb7c8b9e5fcd5008a208ce229f8[m
+Author: Jean Chiclla <j-c_f@outlook.com>
+Date:   Sun Jul 5 16:06:58 2020 -0500
+
+    He agregado un gitignore
+
+[33mcommit 41fa7ce26933e8df8af77b54227fdaf5850c7fee[m
+Author: Jean Chiclla <j-c_f@outlook.com>
+Date:   Sun Jul 5 15:59:44 2020 -0500
+
+    Cambios para probar git, git add, git status, git diff
+
+[33mcommit e89d1bed9ef2ebf661a025a455cb1a1d76e2ee22[m
+Author: colbapnauj <j-c_f@outlook.com>
+Date:   Sun Jul 5 15:46:09 2020 -0500
+
+    Agregando los primeros archivos al primer proyecto web.
